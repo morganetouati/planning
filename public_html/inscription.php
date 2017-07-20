@@ -1,5 +1,4 @@
 <?php
-$front = require '../front.php';
 //$connect = new Planning_Bdd_Connect();
 //$bdd = $connect->getPdo();
 //$instance = Planning_Bdd_Connect::getInstance();

@@ -1,5 +1,5 @@
 <?php
-$front = require '../php/front.php';
+
 //$connect = new Planning_Bdd_Connect();
 //$bdd = $connect->getPdo();
 $instance = Planning_Bdd_Connect::getInstance();
@@ -59,7 +59,6 @@ class times_counter {
 // }
 
 function get_semaine() {
-    $front = require '../php/front.php';
     $instance = Planning_Bdd_Connect::getInstance();
     $connect = $instance->getPdo();
     //$connect = new Planning_Bdd_Connect();
@@ -73,7 +72,6 @@ function get_semaine() {
 }
 
 function get_mois() {
-    $front = require '../php/front.php';
     $instance = Planning_Bdd_Connect::getInstance();
     $connect = $instance->getPdo();
     //$connect = new Planning_Bdd_Connect();
@@ -87,7 +85,6 @@ function get_mois() {
 }
 
 function get_annee() {
-    $front = require '../php/front.php';
     $instance = Planning_Bdd_Connect::getInstance();
     $connect = $instance->getPdo();
     //$connect = new Planning_Bdd_Connect();
@@ -101,7 +98,6 @@ function get_annee() {
 }
 
 function calcul_total_semaine($annee, $semaine, $id_horaire, $cjournee) {
-    $front = require '../php/front.php';
     $instance = Planning_Bdd_Connect::getInstance();
     $connect = $instance->getPdo();
     //$connect = new Planning_Bdd_Connect();
@@ -128,7 +124,6 @@ function calcul_total_semaine($annee, $semaine, $id_horaire, $cjournee) {
 }
 
 function calcul_total_mois($mois, $annee, $id_horaire, $cjournee) {
-    $front = require '../php/front.php';
     //$connect = new Planning_Bdd_Connect();
     //$bdd = $connect->getPdo();
     // recup des horaires sur le mois et annee
@@ -152,7 +147,6 @@ function calcul_total_mois($mois, $annee, $id_horaire, $cjournee) {
 }
 
 function calcul_total_annee($annee, $id_horaire, $cjournee) {
-    $front = require '../php/front.php';
     //$connect = new Planning_Bdd_Connect();
     //$bdd = $connect->getPdo();
     $instance = Planning_Bdd_Connect::getInstance();

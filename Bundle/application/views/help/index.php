@@ -1,7 +1,7 @@
 <?php
 require VIEWS_PATH . 'header.php';
 ?>
-<hr>
-<?php 
-echo $this->msg;
+<p>help page</p>
+<?php
+//phpinfo();
 require VIEWS_PATH . 'footer.php';

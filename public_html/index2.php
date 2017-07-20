@@ -1,5 +1,4 @@
 <?php
-$front = require '../php/front.php';
 //$urlresource = "/planning/vendor/kalliste-sas/Planning/Resources/";
 //var_dump($autoload, $urlresource).die();
 ?>

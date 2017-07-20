@@ -1,10 +1,19 @@
 <?php
 
-$front = require '../php/front.php';
+class Login extends Controller {
+
+    function __construct() {
+        parent::__construct();
+        $this->view->render('login/index');
+    }
+}
+
+
+
 //$connect = new Planning_Bdd_Connect();
 //$bdd = $connect->getPdo();
 
-use Models;
+/*use Models;
 $instance = Planning_Bdd_Connect::getInstance();
 $connect = $instance->getPdo();
 
@@ -33,3 +42,4 @@ if (isset($_POST['submitconnexion'])) {
 } else {
     echo "Remplissez tous les champs pour vous connectez !";
 }
+*/

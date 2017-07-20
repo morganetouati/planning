@@ -1,6 +1,6 @@
 <?php
 include("../model/selectstatut.php");
-$front = require '../php/front.php';
+
 //include("../model/deletestatut.php");
 ?>
 <!Doctype html>

@@ -1,6 +1,3 @@
-<?php
- $front = require '../php/front.php';
-?>
 <!Doctype html>
 <html>
 <head>

@@ -1,5 +1,4 @@
 <?php
-$front = require '../php/front.php';
 
 namespace Planning\Models;
 

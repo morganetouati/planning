@@ -1,9 +1,22 @@
 <?php
 
-$front = require '../php/front.php';
+class Signup extends Controller {
+
+    function __construct() {
+        parent::__construct();
+        $this->view->render('signup/index');
+    }
+
+}
+
+
+
+
+
+
 //$connect = new Planning_Bdd_Connect();
 //$bdd = $connect->getPdo();
-$instance = Planning_Bdd_Connect::getInstance();
+/*$instance = Planning_Bdd_Connect::getInstance();
 $connect = $instance->getPdo();
 
 $nom = htmlentities(htmlspecialchars(mysql_real_escape_string($_POST['nom'])));
@@ -57,4 +70,4 @@ if (isset($_POST['submit'])) {
     } else {
         echo "Veuillez remplir tous les champs ou corriger vos erreurs";
     }
-}
+}*/

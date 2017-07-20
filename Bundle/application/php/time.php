@@ -1,7 +1,7 @@
 <?php
 
 // var_dump(__FILE__, __LINE__,$_POST);
-$front = require '../php/front.php';
+
 //$connect = new Planning_Bdd_Connect();
 //$bdd = $connect->getPdo();
 $instance = Planning_Bdd_Connect::getInstance();

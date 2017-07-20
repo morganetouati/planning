@@ -1,15 +1,15 @@
 <?php
-
 class Bootstrap {
     function __construct() {
-        isset($_GET['url']) ? $_GET['url'] : null;
-        $url = explode('/', filter_var(rtrim($_GET['url'], '/')), FILTER_SANITIZE_URL);
-        print_r($url);
+        $url = isset($_GET['url']) ? $_GET['url'] : null;
+        $url = rtrim($url, '/');
+        $url = explode('/', $url);
 
         if (empty($url[0])) {
+            //isset($_GET['url']) ? $_GET['url'] : null;
             require CONTROLLER_PATH . 'index.php'; //si url est vide redirection sur controllers/index.php
             $controller = new Index(); //instantiation d'un nouvel index
-            return FALSE;
+            return false;
         }
 
         $file = CONTROLLER_PATH . $url[0] . '.php';
@@ -31,5 +31,4 @@ class Bootstrap {
             }
         }
     }
-
 }
